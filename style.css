@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: #fca5a5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section{
+    position: relative;
+    width: 75vw;
+    height: 90vh;
+    display: flex;
+    box-shadow: 0 0 10px rgba(0,0,0);
+}
+.player{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px;
+    justify-content: space-between;
+
+
+}
+.current{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 30px;
+    border-radius: 8px;
+    background-color: #ef4444;
+}
+.current p{
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.name{
+    font-size: 48px;
+}
+.score{
+    font-size: 80px;
+}
+.score-current{
+    font-size: 40px;
+}
+
+
+.btn{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #444;
+    background: none;
+    border: none;
+
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    padding: 10px 30px;
+    border-radius: 100px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+.btn:active {
+    transform: translate(-50%, 3px);
+}
+.btn-new{
+    top: 50px;
+}
+.btn-roll{
+    top: 380px
+}
+.btn-hold{
+    top: 450px
+}
+
+.player-active {
+    background-color: #f87171;
+}
+.hidden{
+    display: none;
+}
+.dice{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 200px;
+    width: 80px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.player-win{
+    background-color: #dc2626;
+}
